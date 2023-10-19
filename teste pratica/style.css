@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(41, 40, 40);
+    margin: 5px;
+    height: auto;
+    width: auto;
+
+}
+.pricipal {
+    height: 50px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+
+    background-color: red;
+    color: white;    
+}
+
+h1 
+{
+    color: white;
+}
+
+h2 {
+    width: 300px;
+    color: white;
+
+}
+
+p {
+    text-decoration:wavy;
+    color: white;
+}
+
+li {
+    color: white;
+    align-items: center;
+    
+}
+
+a {
+    text-decoration: solid;
+    color: rgb(1, 68, 252);
+
+}
+
+li {
+    height: 30px;
+    
+}
+
+.icon1 {
+    margin: -4px;
+    width: 20px;
+    
+}
+
+    
+    
+        
+        
+    
