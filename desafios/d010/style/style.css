@@ -30,6 +30,7 @@ body {
     background-color: white;
     background-color: var(--cor5);
     font-family: var(--fonte-padrao);
+    max-width: 100vh;
     
 }
 
