@@ -3,6 +3,6 @@
 
  teste
 
-<a href="https://brxno1.github.io/HTML-CSS/desafios/d010/android.html">
+<a href="https://brxno1.github.io/HTML-CSS/desafios/d010/android.html" target="_blank">
 
 aaa
