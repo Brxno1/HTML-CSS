@@ -16,75 +16,81 @@
   --cor4: #1a5c37;
   --cor5: #063d1e;
 
+  --cor6: #FFFFFF;
+  --cor7: #1F18F4;
+
   --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
-  --fonte-destaque: 'Bebas neue',  cursive;
+  --fonte-destaque: 'Bebas neue', cursive;
   --fonte-android: 'Android', cursive;
+
 }
 
 * {
   margin: 0px;
   padding: 0px;
+
 }
 
 body {
-    background-color: white;
-    background-color: var(--cor5);
-    font-family: var(--fonte-padrao);
-    
-    
+  background-color: var(--cor6);
+  background-color: var(--cor5);
+  font-family: var(--fonte-padrao);
+
 }
 
 a.externo::after {
-   content: '\00A0\1F517';
+  content: '\00A0\1F517';
 
 }
 
 header {
   background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
   min-height: 150px;
-  text-align: center; 
-  padding-top: 40px; 
+  text-align: center;
+  padding-top: 40px;
+
 }
 
-header > h1 {
+header>h1 {
   font-size: 3em;
   font-family: var(--fonte-destaque);
   font-weight: normal;
-  color: white;
+  color: var(--cor6);
   text-align: center;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.64);
-  
+  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.64);
+
 }
 
-header > p {
+header>p {
   font-family: var(--fonte-padrao);
   font-size: 1.2em;
-  color: white;
+  color: var(--cor6);
   text-align: center;
   max-width: 500px;
   margin: auto;
-  margin-bottom: 20px;
+  padding-bottom: 50px;
   padding-right: 10px;
   padding-left: 10px;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.64);
+  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.64);
 
 }
 
 nav {
   background-color: var(--cor5);
   padding: 10px;
-  box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.77);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.585);
+
 }
 
-nav > a {
-  color: var(--cor1);
+nav>a {
+  color: var(--cor2);
   padding: 10px;
   text-decoration: none;
   font-weight: bold;
   transition-duration: 0.4s;
 }
 
-nav > a:hover {
+nav>a:hover {
   background-color: var(--cor3);
   color: var(--cor5);
   border-radius: 5px;
@@ -93,22 +99,22 @@ nav > a:hover {
 main {
   min-height: 300px;
   max-width: 1000px;
-  background-color: white;
+  background-color: var(--cor6);
   margin: auto;
   margin-bottom: 30px;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.533);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  
+
 }
 
 main h1 {
-  font-family: var(--fonte-android);
+  font-family: Var(--fonte-android);
   font-weight: normal;
   color: var(--cor5);
   font-size: 1.8em;
-  
+
 
 }
 
@@ -116,9 +122,10 @@ main h2 {
   font-weight: normal;
   font-size: 1.3em;
   font-family: var(--fonte-android);
-  background-image: linear-gradient(to right, var(--cor1), transparent);
+  background-image: linear-gradient(to right, var(--cor2), transparent);
   color: var(--cor4);
   text-indent: 8px;
+  padding: 3px;
 
 }
 
@@ -128,6 +135,7 @@ main p {
   text-indent: 30px;
   font-size: 1em;
   line-height: 2em;
+
 }
 
 main strong {
@@ -144,41 +152,50 @@ main a {
   text-decoration: none;
   font-weight: bold;
   padding: 2px 6px;
-  
+
 }
 
 main a:hover {
-  color: blue;
+  color: var(--cor7);
   text-decoration: underline;
 
 }
 
 main img {
   width: 100%;
-  
+
 }
 
 main img.pequena {
-  max-width: 350px;
+  max-width: 320px;
   display: block;
   margin: auto;
+
 }
 
 .droid {
   max-width: 700px;
-  display: block;
   margin: auto;
+  position: relative;
+  display: inline-block;
+  animation: 1.2s droid 3s infinite;
+
 }
 
 .droid:hover {
-  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.849));
-  
+  filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.628));
+  position: relative;
+  display: inline-block;
+  animation: 1.2s droid 3s infinite;
+
 }
 
 .irina {
   max-width: max-content;
   display: block;
   margin: auto;
+  border-radius: 50%;
+  padding-bottom: 20px;
 
 }
 
@@ -191,12 +208,14 @@ div.video {
 
 }
 
-div.video > iframe {
+div.video>iframe {
   position: absolute;
   top: 5%;
   left: 5%;
   width: 90%;
   height: 90%;
+  border-radius: 12px;
+
 }
 
 aside {
@@ -207,55 +226,79 @@ aside {
 
 }
 
-aside > h3 {
+aside>h3 {
   background-color: var(--cor4);
-  color: white;
+  color: var(--cor6);
+  text-indent: 20px;
   padding: 10px;
   margin: -10px -10px 0px -10px;
   border-radius: 10px 10px 0px 0px;
+
 }
 
-aside > ul {
+aside>ul {
   list-style-type: '\2714\00A0\00A0';
   list-style-position: inside;
   columns: 2;
+
 }
 
-aside > p > a.externo {
+aside>p>a {
   background-color: var(--cor2);
   color: var(--cor4);
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
   padding: 2px 6px;
-  
+
 }
 
-aside > p > a:hover {
-  color: blue;
+aside>p>a:hover {
+  color: var(--cor7);
   text-decoration: underline;
+
 }
 
 footer {
   background-color: var(--cor5);
-  color: white;
+  color: var(--cor6);
   text-align: center;
   font-size: 0.8em;
   padding: 5px;
+
 }
 
 footer a {
-  color: white;
+  color: var(--cor6);
   font-weight: bolder;
   text-decoration: none;
-  
+
 }
 
 footer a:hover {
-   text-decoration: underline;
-   color: var(--cor1);
+  text-decoration: underline;
+  color: var(--cor2);
 
 }
 
+@keyframes droid {
+  0% {
+    transform: translate(0);
+  }
 
+  25% {
+    transform: translate(-5px, 5px);
+  }
 
+  50% {
+    transform: translate(5px, 5px);
+  }
+
+  75% {
+    transform: translate(-5px, 5px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
