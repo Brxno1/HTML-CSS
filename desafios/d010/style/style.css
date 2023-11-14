@@ -61,6 +61,11 @@ header>h1 {
 
 }
 
+header>h1::after {
+  content: "Tecnologias";
+  color: var(--cor2);
+}
+
 header>p {
   font-family: var(--fonte-padrao);
   font-size: 1.2em;
