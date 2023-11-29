@@ -68,10 +68,10 @@ section {
 
 section > p {
     padding-bottom: 3em;
-    font-size: 1.3em;
+    
 }
 
-section > normal {
+section.normal {
     background-color: var(--colorWhite);
     color: var(--colorBlack);
 
